@@ -1,0 +1,20 @@
+[
+  {
+    "source": "^the user opens up facebook$",
+    "steps": [
+      {
+        "name": "the user opens up facebook",
+        "aggregatedDurations": {
+          "average": 12.172505727,
+          "median": 12.172505727
+        },
+        "durations": [
+          {
+            "duration": 12.172505727,
+            "location": "myFeature.feature:5"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,39 @@
+Feature: Login to the application
+
+  Scenario: Title of your scenario outline               [90m# myFeature.feature:4[0m
+    [32mGiven [0m[32mthe user opens up facebook[0m                     [90m# TestLogin.the_user_opens_up_facebook()[0m
+    [31mWhen [0m[31mthe user enters the invalid credentials[0m         [90m# TestLogin.the_user_enters_the_invalid_credentials()[0m
+      [31morg.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"username"}
+      Command duration or timeout: 40 milliseconds
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+      System info: host: 'Home-PC', ip: '192.168.1.124', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_121'
+      Driver info: org.openqa.selenium.firefox.FirefoxDriver
+      Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+      Session ID: 947d729a-8b17-45bd-bcd2-2dc1e014421b
+      *** Element info: {Using=id, value=username}
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+      	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+      	at org.openqa.selenium.By$ById.findElement(By.java:218)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+      	at stepDefinition.TestLogin.the_user_enters_the_invalid_credentials(TestLogin.java:21)
+      	at ✽.When the user enters the invalid credentials(myFeature.feature:6)
+      Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"username"}
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+      System info: host: 'Home-PC', ip: '192.168.1.124', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_121'
+      Driver info: driver.version: unknown
+      	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Home/AppData/Local/Temp/anonymous2794790447358609710webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+      	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/Home/AppData/Local/Temp/anonymous2794790447358609710webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
+      	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Home/AppData/Local/Temp/anonymous2794790447358609710webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+      	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/Home/AppData/Local/Temp/anonymous2794790447358609710webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+      	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/Home/AppData/Local/Temp/anonymous2794790447358609710webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+      [0m
+    [36mThen [0m[36mthe application doesn't allow the user to login[0m [90m# TestLogin.the_application_doesn_t_allow_the_user_to_login()[0m
